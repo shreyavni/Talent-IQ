@@ -17,6 +17,16 @@ RUN npm install --prefix backend && npm install --prefix frontend
 # Copy the rest of the application code
 COPY . .
 
+# Declare build arguments provided by Render
+ARG VITE_CLERK_PUBLISHABLE_KEY
+ENV VITE_CLERK_PUBLISHABLE_KEY=$VITE_CLERK_PUBLISHABLE_KEY
+
+ARG VITE_STREAM_API_KEY
+ENV VITE_STREAM_API_KEY=$VITE_STREAM_API_KEY
+
+ARG VITE_API_URL
+ENV VITE_API_URL=$VITE_API_URL
+
 # Build the frontend using the root build script (or just prefix)
 RUN npm run build --prefix frontend
 
