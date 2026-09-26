@@ -4,8 +4,6 @@ A full-stack technical interview platform that enables candidates and interviewe
 
 The platform combines video conferencing, collaborative interview workflows, an in-browser code editor, secure code execution, real-time chat, and automated test-case evaluation into a single application.
 
-![Demo App](./frontend/public/screenshot-for-readme.png)
-
 ---
 
 ## 🚀 Features
